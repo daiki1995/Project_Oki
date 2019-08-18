@@ -1,0 +1,37 @@
+.row-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.column-box{
+  display:flex;
+  flex-direction: column;
+}
+
+.row-boder-box{
+  display: flex;
+  flex-direction: row;
+  border: medium solid #000000;
+  padding: 10px;
+  margin: 10px auto;
+  size:auto;
+  width: 100px;
+}
+
+.column-border-box{
+  display: flex;
+  flex-direction: column;
+  border: medium solid #000000;
+  padding: 10px;
+  margin: 10px auto;
+  size: auto;
+  width: 750px;
+}
+
+.topicks{
+  font-size: 50px;
+}
+
+.contents{
+  font-size: 25px;
+}

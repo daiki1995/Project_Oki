@@ -1,0 +1,20 @@
+{
+  "name": "project_oki",
+  "version": "0.0.1",
+  "description": "HOME Page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo ts",
+    "start": "parcel index.html"
+  },
+  "author": "Daiki Hoshito",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "parcel": "^1.12.3"
+  }
+}
