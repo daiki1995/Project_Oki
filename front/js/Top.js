@@ -32,7 +32,7 @@ function Mid(){
         <div className="column-border-box">
           <h1 className="topicks">TOPICKS</h1>
           <p className="contents">・一つ目 カレンダー</p>
-
+          
         </div>
       </section>
     </>
