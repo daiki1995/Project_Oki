@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './front/js/Top.js';
+import Root from './front/Rout.js';
 
 
-window.onload = () =>ReactDOM.render(<App />, document.getElementById('root'));
+window.onload = () =>ReactDOM.render(<Root />, document.getElementById('root'));

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import ReactDom from 'react-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 function App(){
   return(
@@ -31,8 +32,12 @@ function Mid(){
 
         <div className="column-border-box">
           <h1 className="topicks">TOPICKS</h1>
-          <p className="contents">・一つ目 カレンダー</p>
-          
+
+          <div className="row-box">
+            <p className="contents">・一つ目 </p>
+            <Link className="contents" to="/calender">カレンダー</Link>
+          </div>
+
         </div>
       </section>
     </>
