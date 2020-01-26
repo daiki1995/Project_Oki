@@ -26,14 +26,15 @@ function CalenderComp(){
   Modal.setAppElement('#root');
 
   let eventD={
-    20200201:{text:"元日"},
+    20200101:{text:"元日"},
 
   }
 
   const [date,setDate]=useState(new Date());//クリックしたデータの移動用
   const [day,setDay]=useState("")
-  const [eventDate,setEvemt]=useState(eventD);
+  const [eventDate,setEvent]=useState(eventD);
   const [modalOpen,setModalOpen]=useState(false);
+  const [eTitle,setTitle]=useState("");
 
   function ChangeDate(dataValue){
     setDate(dataValue)
@@ -44,6 +45,9 @@ function CalenderComp(){
   }
 
   function Decision(){
+    eventD=eventDate
+    eventD[getFormData(date)]={text:eTitle}
+    setEvent(eventD)
     setModalOpen(false)
   }
 
@@ -59,7 +63,7 @@ function CalenderComp(){
       return null;
     }
 
-    console.log(day)
+    console.log(getFormData(date))
 
     return(
       <p>
@@ -92,7 +96,7 @@ function CalenderComp(){
 
               <div>
                 <p>タイトル</p>
-                <input className="inputSize"></input>
+                <input className="inputSize" onChange={(e)=>setTitle(e.target.value)}></input>
               </div>
 
 
